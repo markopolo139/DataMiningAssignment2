@@ -21,8 +21,6 @@ def drop_duplicate(data):
     data.drop_duplicates(inplace = True)
 
 
-def halo():
-    print ("hi")
 
 def merge_data(data1, data2, on, how):
     return pd.merge(data1, data2, on = on, how = how)
@@ -30,6 +28,7 @@ def merge_data(data1, data2, on, how):
 
 def calculate_average(data, groupby_column, average_column):
     average = data.groupby(groupby_column)[average_column].mean().reset_index()
+    average.columns = [groupby_column, 'average_'+average_column]
     return average
 
 
