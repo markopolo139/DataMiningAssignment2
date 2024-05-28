@@ -59,18 +59,4 @@ or
 $ pip freeze > Requirements.txt to get the requirements and later above command
 
 ## Brief descrition of what was done in the project
-- **Data Loading**: Loaded the Titanic dataset consisting of passenger information such as survival status, ticket class, gender, age, family relations, ticket details, fare, cabin number, and port of embarkation.
 
-- **Data Preprocessing**:
-    - *Handling Missing Values*: Dropped columns with no relevant information and removed rows with missing values, considering the importance of features in the dataset.
-    - *Encoding Categorical Variables*: Converted categorical variables like 'Sex' and 'Embarked' into numerical labels for machine learning algorithms to process.
-    - *Normalization and Standardization*: We tested both preprocessing techniques and we decided to perform the data scaling using StandardScaler over the MinMaxScaler.
-
-- **Feature Selection**: Recursive Feature Elimination (RFE): Used RFE with Logistic Regression and Random Forest Classifier to select the most important features for prediction.
-
-- **Feature Extraction**: Principal Component Analysis (PCA): Applied PCA to reduce the dimensionality of the dataset while retaining important information, creating new features.
-
-- **Model Training and Evaluation**:
-    - Trained machine learning models (Logistic Regression, SVC) on the training dataset with selected and extracted features.
-    - Evaluated the models' performance on the validation set using metrics such as accuracy and classification report.
-- **Prediction on Test Set**: Utilized the trained models to predict the survival outcomes of passengers in the test set, who did not have their survival status provided.
