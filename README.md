@@ -67,4 +67,49 @@ or
 $ pip freeze > Requirements.txt to get the requirements and later above command
 
 ## Brief descrition of what was done in the project
+### 1. Data Loading and Preprocessing
 
+  1.1. Load the movie, ratings, tags, and links data.
+  
+  1.2. Print the total number of movies and unique users.
+  
+  1.3. Drop unnecessary columns like timestamps.
+  
+  1.4. Merge ratings and movies data.
+  
+  1.5. Merge tags data with ratings and movies.
+  
+  1.6. Drop rows with missing values and duplicate entries.
+
+### 2. Feature Engineering
+  2.1. Calculate average rating for each movie.
+  
+  2.2. Transform the 'genres' attribute into multiple binary attributes.
+  
+  2.3. Drop redundant columns like 'genres', 'title', and '(no genres listed)'.
+  
+  2.4. Compute the total count of genres per movie.
+  
+  2.5. Fill missing values with zero.
+  
+  2.6. Scale numerical features ('rating', 'average_rating', 'total_genres') using StandardScaler.
+
+### 3. Rating Prediction Functions
+  3.1. Implement a rule-based rating prediction function based on user and movie genre preferences.
+  
+  3.2. Implement a clustering-based rating prediction function using KMeans clustering.
+  
+  3.3. Define a combined rating prediction function that averages ratings from the rule-based and clustering-based methods.
+
+### 4. Evaluation
+  4.1. Define a function to evaluate the model.
+  
+  4.2. Split the data into test and train sets.
+  
+  4.3. Predict ratings for test data using the combined rating function.
+  
+  4.4. Calculate Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) for model evaluation.
+
+### 5. Results
+  
+  5.1. Print the Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) of the model.
