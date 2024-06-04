@@ -60,11 +60,11 @@ Tags serve as user-generated metadata for movies, providing additional informati
 ## Installation of Libraries
 **Pip freeze**: You can install the dependencies by running the following command in your terminal.
 
-$ pip install -r Requirements.txt 
+     $ pip install -r Requirements.txt 
 
 or 
 
-$ pip freeze > Requirements.txt to get the requirements and later above command
+    $ pip freeze > Requirements.txt to get the requirements and later above command
 
 ## Brief descrition of what was done in the project
 ### 1. Data Loading and Preprocessing
