@@ -64,7 +64,9 @@ Tags serve as user-generated metadata for movies, providing additional informati
 
 or 
 
-    $ pip freeze > Requirements.txt to get the requirements and later above command
+    $ pip freeze > Requirements.txt 
+
+to get the requirements and later the first command
 
 ## Brief descrition of what was done in the project
 ### 1. Data Loading and Preprocessing
